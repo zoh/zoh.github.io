@@ -31,7 +31,7 @@
 <script type="text/javascript" id="source-js">'use strict';
 /**
  *  @author zoh
- *  @link http://
+ *  @link http://zoh.github.io/cv/#js
  *  @class Persone
  *  @language javascript
  */
@@ -75,7 +75,7 @@ function Persone () {
     },
     {
       period  : '06.2013 - 01.2015',
-      name    : 'ООО КИР, (kirkazan.ru)',
+      name    : 'ООО КИР, (http://kirkazan.ru)',
       position: 'Ведущий инженер программист',
       stack   : 'Pure Javascript, Dust.js, Backbone.js, Vanilla.js',
       note    : 'Разработка в команде мета-платформы N2O, для создания корпоративных продуктов. '
@@ -96,7 +96,7 @@ function Persone () {
     },
     {
       period  : '01.2012 - 05.2012',
-      name    : 'БАРС Груп, ООО (Казань,  www.bars-open.ru)',
+      name    : 'БАРС Груп, ООО (Казань,  http://www.bars-open.ru)',
       position: 'Web developer',
       stack   : 'JavaScript, ExtJS 4, Python, PostgreSQL',
       note    : 'Создание корпоративной мета-платформы на ExtJS4 + Python работающая по технологии REST для проектов гос. структур.'
@@ -113,14 +113,14 @@ function Persone () {
 
   // Период работы с некоторыми технологиями.
   this.experience = {
-    PHP       : '---*******************------********------------------------------',
-    MySQL     : '-----******************************-------------------------------',
-    JavaScript: '----------------------********************************************',
-    NodeJS    : '-------------------------------------******************-----------',
-    PostgreSQL: '------------------------------------------------******************',
-    Scala     : '-------------------------------------------------------***********',
-    Golang    : '-------------------------------------------------------***********',
-    Years     : '---2010---/---2011---/---2012---/---2013---/---2014---/---2015---/'
+    PHP       : '---*******************------********------------------------',
+    MySQL     : '-----******************************-------------------------',
+    JavaScript: '----------------------**************************************',
+    NodeJS    : '-------------------------------------******************-----',
+    PostgreSQL: '------------------------------------------------************',
+    Scala     : '-------------------------------------------------------*****',
+    Golang    : '-------------------------------------------------------*****',
+    Years     : '---2010---/---2011---/---2012---/---2013---/---2014---/---2015---'
   };
 
 
@@ -204,7 +204,7 @@ func main() {
       },
       Work{
         Period:   "06.2013 - 01.2015",
-        Name:     "ООО КИР, (kirkazan.ru)",
+        Name:     "ООО КИР, (http://kirkazan.ru)",
         Position: "Ведущий инженер программист",
         Stack:    []string{"Pure Javascript", "Dust.js", "Backbone.js", "Vanilla.js"},
         Note:     "Разработка в команде мета-платформы N2O, для создания корпоративных продуктов.",
@@ -226,7 +226,7 @@ func main() {
       },
       Work{
         Period:   "01.2012 - 05.2012",
-        Name:     "БАРС Груп, ООО (Казань,  www.bars-open.ru)",
+        Name:     "БАРС Груп, ООО (Казань,  http://www.bars-open.ru)",
         Position: "Web developer",
         Stack:    []string{"JavaScript", "ExtJS 4", "Python", "PostgreSQL"},
         Note: `Создание корпоративной мета-платформы на ExtJS4 + Python работающая по технологии REST
@@ -325,6 +325,18 @@ type Persone struct {
   
 
   hljs.initHighlightingOnLoad();
+
+  // make links
+  setTimeout(function () {
+    var strings = document.querySelectorAll('.container code .hljs-string');
+    for (var i = 0; i < strings.length; i++) {
+      var c = strings[i];
+      if (c.innerHTML.match('\\bhttp')) {
+        var url = c.innerHTML.match(/\b(http.*)\b/);
+        c.innerHTML  = c.innerHTML.replace(url[0], '<a target="blank" href="' + url[0] + '">' + url[0] + '</a>');
+      }
+    };
+  }, 0);
 })();
 </script>
 <script type="text/javascript">
