@@ -35,12 +35,13 @@
  *  @class Persone
  *  @language javascript
  */
+var STATUS     = 'В поиске.';
 
 function Persone () {
 
   this.name      = 'Захаров Илья';
   this.birthDay  = '17.08.1988';
-  this.phone     = '+7 963 1218671';
+  this.phone     = '+7-963-1218671';
   this.email     = 'zoh@bk.ru';
   this.gitHub    = 'https://github.com/zoh';
 
@@ -58,62 +59,88 @@ function Persone () {
   // Works
   this.works = [
     {
-      period  : '01.2015 - present',
-      name    : 'Magnova.ru - Сервис совместных закупок',
-      position: 'Front-end developer',
-      stack   : 'Angular.js, yeoman.io, Jira',
-      note    : 'Ответственен за основную страницу сайта и бек-офис. ' +
-                'Для бек-офиса используется AngularJs. ' +
-                'Общение с Restful jee сервисом. ' +
-                'Работа по Scrum, со спринтами.'
-    },
-    {
-      period  : '08.2014 - 01.2015',
-      name    : 'Foturist (http://46.36.219.2/)',
-      position: 'Fullstack',
-      stack   : 'node.js, sails.js, elasticsearch, PostgreSQL'
+      period   : '01.2015 - present',
+      name     : 'Magnova.ru - Сервис совместных закупок (https://www.magnova.ru/)',
+      position : 'Front-end developer',
+      remoteJob: true,
+      stack    : 'Angular.js, yeoman.io, Jira',
+      note     : 'Ответственен за основную страницу сайта и бек-офис. ' +
+                 'Для бек-офиса используется AngularJs. ' +
+                 'Взаимодействие с Restful jee сервисом. ' +
+                 'Работа по Scrum, со спринтами.'
     },
     {
       period  : '06.2013 - 01.2015',
       name    : 'ООО КИР, (http://kirkazan.ru)',
       position: 'Ведущий инженер программист',
       stack   : 'Pure Javascript, Dust.js, Backbone.js, Vanilla.js',
-      note    : 'Разработка в команде мета-платформы N2O, для создания корпоративных продуктов. '
+      note    : 'Разработка в команде мета-платформы N2O, системы проектирования бизнес-процессов.'
+    },
+    {
+      period  : '06.2012 - 05.2013',
+      name    : 'ООО Управление информационными проектами',
+      position: 'Web Developer',
+      stack   : 'JavaScript, CoffeeScript, KnockoutJS, WebSocket, PHP5',
+      note    : 'Для проекта государственных электронных услуг РТ, разрабатывал новую версию приложения для Инфоматов',
+      img     : '(http://www.infomatika.ru/uploads/images/V6/V6-1-768.jpg)'
+    },
+    {
+      period  : '06.2011 - 05.2012',
+      name    : 'ООО "Флашелс"  (Казань, http://flashells.ru/)',
+      position: 'старший PHP разработчик',
+      stack   : 'PHP5, Yii, MySQL',
+      note    : 'Отвечал за back-end архитектуру данного проекта, бек-офис, портал, Restful-API.'
+    }
+  ];
+
+
+  this.freelance = [
+    {
+      period  : '01.2015 - 06.2015',
+      name    : 'Betfair traiding bot',
+      position: 'backend',
+      stack   : 'Scala, Golang, MongoDB, Docker',
+      note    : 'Робот для автоматизированной торговли на бирже.'
+    },
+    {
+      period  : '08.2014 - 01.2015',
+      name    : 'Foturist (http://46.36.219.2/)',
+      position: 'Fullstack',
+      stack   : 'node.js, sails.js, elasticsearch, PostgreSQL',
+      note    : 'Биржа фотографов'
     },
     {
       period  : '03.2013 - 06.2013',
       name    : 'TrueTipsters (http://truetipsters.ru)',
-      position: 'Fullstack developer',
+      position: 'Fullstack developer, Founder',
       stack   : 'CoffeeScript, Node.js, PHP, Redis, MongoDB.',
       note    : 'Разработка распределённого back-end на Node.js'
-    }, 
-    {
-      period  : '06.2012 - 03.2013',
-      name    : 'ООО Управление информационными проектами',
-      position: 'Web Developer',
-      stack   : 'JavaScript, CoffeeScript, KnockoutJS, WebSocket, PHP5',
-      note    : 'Для проекта государственных электронных услуг РТ разрабатывал новую версию интерфейса для Инфоматов'
     },
     {
-      period  : '01.2012 - 05.2012',
-      name    : 'БАРС Груп, ООО (Казань,  http://www.bars-open.ru)',
-      position: 'Web developer',
-      stack   : 'JavaScript, ExtJS 4, Python, PostgreSQL',
-      note    : 'Создание корпоративной мета-платформы на ExtJS4 + Python работающая по технологии REST для проектов гос. структур.'
+      period  : '10.2011 - 01.2012',
+      name    : 'Дубли – система управления процессом киносъёмки (http://www.dooblee.ru)',
+      position: 'Fullstack',
+      stack   : 'PHP5, JS, MySQL'
     },
     {
-      period  : '06.2011 - 01.2012',
-      name    : 'ООО "Флашелс"  (Казань, http://flashells.ru/)',
-      position: 'старший PHP разработчик',
-      stack   : 'PHP5, Yii, MySQL',
-      note    : 'Отвечал за backend и всю архитектуру данного проекта.'
+      period  : '-02.2010'.
+      name    : 'Тайные признания (http://vk.com/app2723689_12821579)',
+      stack   : 'PHP, MySQL, Yii',
+      note    : 'iframe приложение vkontakte, и внешний веб-сервис.'
+    },
+
+    {
+      period  : '2007 - 2010',
+      name    : '(https://www.weblancer.net/users/zoha/portfolio/)',
+      position: 'Web developer, freelance',
+      stack   : 'PHP, MySQL, HTML, JS, Jquery'
     }
   ];
 
 
   // Период работы с некоторыми технологиями.
   this.experience = {
-    PHP       : '---*******************------********------------------------',
+    PHP       : '**********************------********------------------------',
     MySQL     : '-----******************************-------------------------',
     JavaScript: '----------------------**************************************',
     NodeJS    : '-------------------------------------******************-----',
@@ -146,7 +173,7 @@ function Persone () {
 
   // в добавку.
   this.KeySkills = [
-    'CoffeeScript', 'AngularJs', 'JavaScript', 'Backbone.Js', 'Ajax', 'CSS3', 'HTML5',
+    'CoffeeScript', 'AngularJs', 'JavaScript', 'Backbone.Js', 'Ajax', 'CSS3', 'HTML5', 'ES6',
     'REST', 'JSON', 'TDD', 'BDD', 'MVC', 'MVVM', 'SOA', 'PHP', 'Git', 'MySQL', 'MongoDB', 'Redis',
     'SOLID', 'Elasticsearch', 'Ubuntu', 'CentOs', 'Docker', '...'
   ];
@@ -155,7 +182,8 @@ function Persone () {
   this.achivements = [
     {
       from        : 'ООО УИП',
-      achivements : 'благодарственное письмо от директора ООО: "За современный подход в разработке и проектировании ПО"'
+      achivements : 'благодарственное письмо от директора ООО: '+
+      ' "За современный подход в разработке и проектировании ПО" (https://goo.gl/photos/LheNSKEtfawfuAbt9)'
     }
   ];
 }
@@ -197,24 +225,11 @@ func main() {
                        Работа по Scrum, со спринтами.`,
       },
       Work{
-        Period:   "08.2014 - 01.2015",
-        Name:     "Foturist (http://46.36.219.2/)",
-        Position: "Fullstack",
-        Stack:    []string{"node.js", "sails.js", "elasticsearch", "PostgreSQL"},
-      },
-      Work{
         Period:   "06.2013 - 01.2015",
         Name:     "ООО КИР, (http://kirkazan.ru)",
         Position: "Ведущий инженер программист",
         Stack:    []string{"Pure Javascript", "Dust.js", "Backbone.js", "Vanilla.js"},
         Note:     "Разработка в команде мета-платформы N2O, для создания корпоративных продуктов.",
-      },
-      Work{
-        Period:   "03.2013 - 06.2013",
-        Name:     "TrueTipsters (http://truetipsters.ru)",
-        Position: "Fullstack developer",
-        Stack:    []string{"CoffeeScript", "Node.js", "PHP", "Redis", "MongoDB"},
-        Note:     "Разработка распределённого back-end на Node.js",
       },
       Work{
         Period:   "06.2012 - 03.2013",
@@ -225,14 +240,6 @@ func main() {
             версию интерфейса для Инфоматов`,
       },
       Work{
-        Period:   "01.2012 - 05.2012",
-        Name:     "БАРС Груп, ООО (Казань,  http://www.bars-open.ru)",
-        Position: "Web developer",
-        Stack:    []string{"JavaScript", "ExtJS 4", "Python", "PostgreSQL"},
-        Note: `Создание корпоративной мета-платформы на ExtJS4 + Python работающая по технологии REST
-            для проектов гос. структур.`,
-      },
-      Work{
         Period:   "06.2011 - 01.2012",
         Name:     "ООО \"Флашелс\"  (Казань, http://flashells.ru/)",
         Position: "старший PHP разработчик",
@@ -240,6 +247,49 @@ func main() {
         Note:     "Отвечал за backend и всю архитектуру данного проекта.",
       },
     },
+
+    Freelance: []Work{
+      Work{
+        Period  : "01.2015 - 06.2015",
+        Name    : "Betfair traiding bot",
+        Position: "backend",
+        Stack   : []string{"Scala", "Golang", "MongoDB", "Docker"},
+        Note    : "Робот для автоматизированной торговли на бирже.",
+      },
+      Work{
+        Period  : "08.2014 - 01.2015",
+        Name    : "Foturist (http://46.36.219.2/)",
+        Position: "Fullstack",
+        Stack   : []string{"node.js", "sails.js", "elasticsearch", "PostgreSQL"},
+        Note    : "Биржа фотографов",
+      },
+      Work{
+        Period  : "03.2013 - 06.2013",
+        Name    : "TrueTipsters (http://truetipsters.ru)",
+        Position: "Fullstack developer, Founder",
+        Stack   : []string{"CoffeeScript", "Node.js", "PHP", "Redis", "MongoDB"},
+        Note    : "Разработка распределённого back-end на Node.js",
+      },
+      Work{
+        Period  : "10.2011 - 01.2012",
+        Name    : "Дубли – система управления процессом киносъёмки (http://www.dooblee.ru)",
+        Position: "Fullstack",
+        Stack   : []string{"PHP5", "JS", "MySQL"},
+      },
+      Work{
+        Period  : "-02.2010".
+        Name    : "Тайные признания (http://vk.com/app2723689_12821579)",
+        Stack   : []string{"PHP", "MySQL", "Yii"},
+        Note    : "iframe приложение vkontakte, и внешний веб-сервис.",
+      },
+      Work{
+        Period  : "2007 - 2010",
+        Name    : "(https://www.weblancer.net/users/zoha/portfolio/)",
+        Position: "Web developer, Freelance",
+        Stack   : []string{"PHP", "MySQL", "HTML", "JS", "Jquery"},
+      }
+    },
+
     Experience: map[string]string{
       "PHP":        "---*******************------********------------------------",
       "MySQL":      "-----******************************-------------------------",
@@ -308,6 +358,7 @@ type Persone struct {
   Education   Education
   KeySkills   []string
   Achivements []Achivement
+  Freelance   []Work
 }
 </script>
 
