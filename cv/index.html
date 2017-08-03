@@ -13,7 +13,7 @@
   <span class="info">CV </span>
 </div>
 
-<div id="js" class="menu"><a href="#js">javascript</a></div>
+<div id="js" class="menu"><a href="#js">js</a></div>
 <section class="container js">
   <div class="line-number"></div>
   <pre><code class="javascript"></code></pre>
@@ -59,7 +59,53 @@ function Persone () {
   // Works
   this.works = [
     {
-      period   : '01.2015 - present',
+      period   : '01.2016 - present',
+      name     : 'Freelance',
+      position : 'Fullstack developer',
+      stack    : 'NodeJS, ReactJS/ES2015, Reflux, webpack, PostgreSQL, amazonaws',
+      note     : `Проекты:
+                  ABIES LMS
+                  Разработка системы управления уличным освещением. 
+                  Удалённая работа.
+
+                  Разрабатывал UI с использование ReactJS, webpack, Reflux.
+                  Так же был ответственен за реализацию frontend контроллеров на golang server.
+
+                  Пилот проекта внедрён на автобане в Греции.
+
+
+                  ================================
+                  Cloudento.ru
+                  Система управления бизнес процессов для зубных клиник.
+                  Разрабатывал UI с использование ReactJS, webpack, Reflux.
+                  WebServer - golang, postgresql.
+
+
+                  ================================
+                  РЖД
+                  Заказ онлайн-билетов.
+                  angular2/TypeScript, webpack
+
+
+                  ================================
+                  «Информационная система организации процесса выдачи специальных разрешений на
+                  автомобильную перевозку крупногабаритных и тяжеловесных грузов» СВР-Лайт для тендера в г. Калининград
+                  golang, reactjs, mobX`
+    },
+    {
+      period   : '08.2015 - 01.2016',
+      name     : 'Oktell - Проект BPIUM (https://bpium.ru/)',
+      position : 'Fullstack developer',
+      stack    : 'NodeJS, ReactJS/ES2015, Reflux, webpack, PostgreSQL, amazonaws',
+      note     : `Конструктор-платформа для создания и управления CRM, BPM систем - BPIUM.
+                  Отвечал за разработку приложения full stack: front/back-ends.
+
+                  Современный стек технологий: Node.js, React+Flux, ImmutableJs, ES2015, PostgreSQL. Unit testing. Масштабируемое кластерное приложение развёрнутое на AWS.
+                  ***
+                  Проект запушен, и находится в стадии подписании партнёрских соглашений.`
+    },
+    {
+      period   : '01.2015 - 08.2015',
       name     : 'Magnova.ru - Сервис совместных закупок (https://www.magnova.ru/)',
       position : 'Front-end developer',
       remoteJob: true,
@@ -181,7 +227,8 @@ function Persone () {
 }
 </script>
 
-<script type="text/golang" id="source-go">package main
+<script type="text/golang" id="source-go">
+package main
 
 import (
   "fmt"
@@ -207,7 +254,53 @@ func main() {
 
     Works: []Work{
       Work{
-        Period:   "01.2015 - present",
+        Period:   "01.2016 - present",
+        Name:     "Freelance",
+        Position: "Fullstack developer",
+        Stack:    []string{"NodeJS", "ReactJS/ES2015", "Reflux", "webpack", "PostgreSQL", "amazonaws"},
+        Note: `Проекты:
+                  ABIES LMS
+                  Разработка системы управления уличным освещением. 
+                  Удалённая работа.
+
+                  Разрабатывал UI с использование ReactJS, webpack, Reflux.
+                  Так же был ответственен за реализацию frontend контроллеров на golang server.
+
+                  Пилот проекта внедрён на автобане в Греции.
+
+
+                  ================================
+                  Cloudento.ru
+                  Система управления бизнес процессов для зубных клиник.
+                  Разрабатывал UI с использование ReactJS, webpack, Reflux.
+                  WebServer - golang, postgresql.
+
+
+                  ================================
+                  РЖД
+                  Заказ онлайн-билетов.
+                  angular2/TypeScript, webpack
+
+
+                  ================================
+                  «Информационная система организации процесса выдачи специальных разрешений на
+                  автомобильную перевозку крупногабаритных и тяжеловесных грузов» СВР-Лайт для тендера в г. Калининград
+                  golang, reactjs, mobX`,
+      },
+      Work{
+        Period:   "08.2015 - 01.2016",
+        Name:     "Oktell - Проект BPIUM (https://bpium.ru/)",
+        Position: "Fullstack developer",
+        Stack:    "NodeJS, ReactJS/ES2015, Reflux, webpack, PostgreSQL, amazonaws",
+        Note: `Конструктор-платформа для создания и управления CRM, BPM систем - BPIUM.
+                    Отвечал за разработку приложения full stack: front/back-ends.
+
+                    Современный стек технологий: Node.js, React+Flux, ImmutableJs, ES2015, PostgreSQL. Unit testing. Масштабируемое кластерное приложение развёрнутое на AWS.
+                    ***
+                    Проект запушен, и находится в стадии подписании партнёрских соглашений.`,
+      },
+      Work{
+        Period:   "01.2015 - 08.2015",
         Name:     "Magnova.ru - Сервис совместных закупок",
         Position: "Front-end developer",
         Stack:    []string{"Angular.js", "yeoman.io", "Jira"},
@@ -242,44 +335,44 @@ func main() {
 
     Freelance: []Work{
       Work{
-        Period  : "01.2015 - 06.2015",
-        Name    : "Betfair traiding bot",
+        Period:   "01.2015 - 06.2015",
+        Name:     "Betfair traiding bot",
         Position: "backend",
-        Stack   : []string{"Scala", "Golang", "MongoDB", "Docker"},
-        Note    : "Робот для автоматизированной торговли на бирже.",
+        Stack:    []string{"Scala", "Golang", "MongoDB", "Docker"},
+        Note:     "Робот для автоматизированной торговли на бирже.",
       },
       Work{
-        Period  : "08.2014 - 01.2015",
-        Name    : "Foturist (http://46.36.219.2/)",
+        Period:   "08.2014 - 01.2015",
+        Name:     "Foturist (http://46.36.219.2/)",
         Position: "Fullstack",
-        Stack   : []string{"node.js", "sails.js", "elasticsearch", "PostgreSQL"},
-        Note    : "Биржа фотографов",
+        Stack:    []string{"node.js", "sails.js", "elasticsearch", "PostgreSQL"},
+        Note:     "Биржа фотографов",
       },
       Work{
-        Period  : "03.2013 - 06.2013",
-        Name    : "TrueTipsters (http://truetipsters.ru)",
+        Period:   "03.2013 - 06.2013",
+        Name:     "TrueTipsters (http://truetipsters.ru)",
         Position: "Fullstack developer, Founder",
-        Stack   : []string{"CoffeeScript", "Node.js", "PHP", "Redis", "MongoDB"},
-        Note    : "Разработка распределённого back-end на Node.js",
+        Stack:    []string{"CoffeeScript", "Node.js", "PHP", "Redis", "MongoDB"},
+        Note:     "Разработка распределённого back-end на Node.js",
       },
       Work{
-        Period  : "10.2011 - 01.2012",
-        Name    : "Дубли – система управления процессом киносъёмки (http://www.dooblee.ru)",
+        Period:   "10.2011 - 01.2012",
+        Name:     "Дубли – система управления процессом киносъёмки (http://www.dooblee.ru)",
         Position: "Fullstack",
-        Stack   : []string{"PHP5", "JS", "MySQL"},
+        Stack:    []string{"PHP5", "JS", "MySQL"},
       },
       Work{
-        Period  : "-02.2010".
-        Name    : "Тайные признания (http://vk.com/app2723689_12821579)",
-        Stack   : []string{"PHP", "MySQL", "Yii"},
-        Note    : "iframe приложение vkontakte, и внешний веб-сервис.",
+        Period: "-02.2010",
+        Name:   "Тайные признания (http://vk.com/app2723689_12821579)",
+        Stack:  []string{"PHP", "MySQL", "Yii"},
+        Note:   "iframe приложение vkontakte, и внешний веб-сервис.",
       },
       Work{
-        Period  : "2007 - 2010",
-        Name    : "(https://www.weblancer.net/users/zoha/portfolio/)",
+        Period:   "2007 - 2010",
+        Name:     "(https://www.weblancer.net/users/zoha/portfolio/)",
         Position: "Web developer, Freelance",
-        Stack   : []string{"PHP", "MySQL", "HTML", "JS", "Jquery"},
-      }
+        Stack:    []string{"PHP", "MySQL", "HTML", "JS", "Jquery"},
+      },
     },
 
     Experience: map[string]string{
@@ -351,6 +444,7 @@ type Persone struct {
   Achivements []Achivement
   Freelance   []Work
 }
+
 </script>
 
 <script>
