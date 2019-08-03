@@ -1,10 +1,384 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<title>zoh</title>
-</head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="content-script-type" content="text/javascript"/>
+    <meta http-equiv="content-style-type" content="text/css"/>
+    <meta http-equiv="content-language" content="en"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <meta name="author" content="Zaharov Ilya"/>
+    <meta name="description"
+          content="I'm Ilya and I cool engineer developer; have a good knowledge of front-end and backend in particular: Golang, Node.js"/>
+    <meta name="keywords"
+          content="Resume, Full Stack, Web developer, Golang, Node.js, Vue.js, React, Algorithms, PostgreSQL"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="revisit-after" content="30 days"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Webpack Boilerplate</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.8.95/css/materialdesignicons.min.css">
+<link rel="shortcut icon" href="favicon.ico"></head>
 <body>
 
-	<a href="./cv">CV</a>
+<div id="fps-block"></div>
 
-</body>
+<canvas id=c></canvas>
+
+<div class="first-page" style="z-index: -2; position: relative;">
+    <div class="container">
+        <h1>Ilya Zaharov</h1>
+        <p class="lead">resume page</p>
+    </div>
+</div>
+
+<a href="#profile" class="scroll-down"><span class="chevron bottom"></span></a>
+
+<nav class="navbar navbar-default" id="navbar-" role="navigation">
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#profile">Profile</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#abilities">Abilities</a></li>
+            <!--            <li><a href="#projects">Projects</a></li>-->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="profile" class="page odd">
+    <div class="content">
+        <h2>Profile</h2>
+        <div class="b-flex b-flex__border">
+            <div class="b-flex__el__dark p-a-10 text-center">
+                <img class="face"
+                     src="./assets/images/photo_2018-10-13_20-47-38.jpg"
+                     alt=""/>
+                <br>
+                <p>Name: <b>Ilya Zaharov</b></p>
+                <p>Age: <b>30</b></p>
+                <p><b>Russia, Kazan.</b> Milky way</p>
+
+                <aside class="sn-links m-t-15">
+                    <a href="https://github.com/zoh" target="_blank" title="github" class="mdi mdi-github-circle"></a>
+                    <a href="mailto:)" title="email" target="_blank" class="mdi mdi-email"></a>
+                    <a href="https://tlgg.ru/@zohme" target="_blank" title="telegram" class="mdi mdi-telegram"></a>
+                    <a href="https://www.linkedin.com/in/ilya-z-4376a670/" target="_blank" title="linkedin"
+                       class="mdi mdi-linkedin"></a>
+                </aside>
+            </div>
+
+            <div class="b-flex__el  p-a-10">
+                <h3>Full Stack Developer. JavaScript, Golang</h3>
+
+                <p class="paragraph">
+                    I am a goal-oriented specialist with 7+ years of experience in IT.
+                    I’m looking for an opportunity to apply my knowledge and skills in the IT field,
+                    as well as participate in the development of complex, interesting projects.
+                    Interested in both professional and personal growth.
+                </p>
+                <ul>
+                    <li>excellent :) lead and single developer</li>
+                    <li>flexible approach to solving complex problems</li>
+                    <li>continuous self-education</li>
+                    <li>fast learning on new stacks and techs.</li>
+                    <li>sociability, easily fits into any environment</li>
+                </ul>
+
+                <aside class="">
+                    <p>- <a href="#">the resume in pdf (ru)</a></p>
+                    <p>-
+                        <a rel="nofollow"
+                           target="_blank"
+                           href="https://kazan.hh.ru/applicant/resumes/view?resume=d571448fff073547370039ed1f48515749684a">
+                            resume on hh.ru</a></p>
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="experiences" class="page oven">
+    <div class="content">
+        <h2>Experiences</h2>
+        <hr>
+        <h3>Careers</h3>
+
+        <div class="b-flex">
+            <div class="b-flex__el b-flex__el_weak p-a-10 p-r-20 text-right">
+                <b>Self-Employer</b> <br>
+                <small>January 2016 - until now</small>
+            </div>
+            <div class="b-flex__el p-a-10 p-l-20">
+                <h4 class="m-t-0">Full Stack Web Developer</h4>
+
+                <p class="paragraph paragraph_noindent">
+                    During this time I worked on several projects:
+                </p>
+
+                <p class="p-t-10">
+                    <u>ABIES Escos. Smart Lightning System, IoT</u> <br>
+                </p>
+                <p class="paragraph">
+                    Developed a UI using: ReactJS, webpack, Reflux, MobX;
+                    And the server side on: <code>Golang</code>, PostgreSQL
+                </p>
+                <p class="p-t-10">
+                    <u>Cloudento</u>
+                </p>
+                <p class="paragraph">
+                    Full-cycle business process management system for dental clinics. <br>
+                    ReactJS + Reflux, Webpack, <code>Golang</code>, Postgresql.
+                </p>
+
+                <p><u>ACS PS <i>"ZARYA"</i></u></p>
+                <p class="p-t-10 paragraph">
+                    Automated control system for power plants and substations through the
+                    IEC 61850 communication protocol.<br>
+                    Monitoring and control system through AWP (Automated workplace).
+                    Stack: <code>Golang</code>, <code>VueJS</code>, TimescaleDB
+                </p>
+            </div>
+        </div>
+
+        <div class="b-flex m-t-20">
+            <div class="b-flex__el b-flex__el_weak p-a-10 p-r-20 text-right">
+                <b>Oktell, <a rel="nofollow" href="https://www.bpium.ru/">BPIUM</a></b> <br>
+                <small>August 2015 - January 2016</small>
+            </div>
+            <div class="b-flex__el p-a-10 p-l-20">
+                <h4 class="m-t-0">Full Stack JavaScript Developer</h4>
+                <p class="paragraph">
+                    BPIUM - constructor-platform for creating and managing CRM, BPM systems.
+                    He was responsible for the development of the full stack: front / back-ends application.
+                    <br>
+                    Modern technology stack, on that moment:
+                    Node.js, React + Flux, ImmutableJs, ES2015, PostgreSQL.
+                    Unit testing. A scalable cluster application deployed on AWS.
+                </p>
+            </div>
+        </div>
+
+        <div class="b-flex m-t-20">
+            <div class="b-flex__el b-flex__el_weak p-a-10 p-r-20 text-right">
+                <b><a rel="nofollow" href="http://kirkazan.ru/">KIR</a></b> <br>
+                <small>June 2013 - January 2015</small>
+            </div>
+            <div class="b-flex__el p-a-10 p-l-20">
+                <h4 class="m-t-0">Senior Software Engineer</h4>
+                <p class="paragraph">
+                    Government project RMIS (Medical information system)
+                    Development in a team of meta-platform N2O, the system design of business processing.
+                    Responsible for the frontend.
+                    Stack tech: Backbone, dust.js, Vanilla JS, Bootstrap, Webdriver.js ...
+                </p>
+            </div>
+        </div>
+
+
+        <div class="b-flex m-t-20">
+            <div class="b-flex__el b-flex__el_weak p-a-10 p-r-20 text-right">
+                <b><a rel="nofollow" target="_blank" href="http://tatarstan.ru/">ООО УИП</a></b> <br>
+                <small>June 2012 - May 2013</small>
+            </div>
+            <div class="b-flex__el p-a-10 p-l-20">
+                <h4 class="m-t-0">Web Developer</h4>
+                <p class="paragraph">
+                    Development new application for Infomat client the Government Online Services systems.
+                    Was developed single page app on knockout.js and other libs.
+                    <br>
+                    Infomat, It looks like this:
+                    <a href="assets/images/top-infomat.png" target="_blank"><img src="assets/images/top-infomat.png"
+                                                                                 width="50" height="50"></a>
+                    <br>
+                    Stack tech: Win service, knockout.js, requiredJs, jQuery, deffered, TDD.
+                </p>
+                <p class="paragraph">
+                    Have a letter with thanks from the director:
+                    <i>"​In the modern approach to design and development software</i>
+                </p>
+
+            </div>
+        </div>
+
+
+        <div class="b-flex m-t-20">
+            <div class="b-flex__el b-flex__el_weak p-a-10 p-r-20 text-right">
+                <b><a rel="nofollow" target="_blank" href="http://flashells.ru/">FLASHELLS</a></b> <br>
+                <small>June 2011 - May 2012</small>
+            </div>
+            <div class="b-flex__el p-a-10 p-l-20">
+                <h4 class="m-t-0">Lead PHP Developer</h4>
+
+                <p class="paragraph">Flashells is a startup where could you create your online store and deploy him into
+                    the
+                    popular social networks. Just like "Ecwid" but on Adobe Flash.
+                </p>
+                <p class="paragraph">
+                    I was responsible for the backend and architecture of this project, back office, portal, Restful-API
+                    <br>
+                    Fast development for the client, for the result.
+                    I used the capabilities of the Yii framework, PHP, MySQL, HTML5, jQuery.
+                </p>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>Education</h3>
+        <div class="b-flex m-t-20">
+            <div class="b-flex__el b-flex__el_weak p-a-10 p-r-20 text-right">
+                <b><a rel="nofollow" target="_blank" href="http://www.kstu.ru">
+                        Kazan National Research Technological University
+                    </a></b> <br>
+                <small>2005 - 2010</small>
+            </div>
+            <div class="b-flex__el p-a-10 p-l-20">
+                <h4 class="m-t-0">
+                    Engineer's degree, Computer software systems and program complexes
+                </h4>
+
+                <p class="paragraph">
+                    University is one of the leading Russian institutions
+                    in aircraft engineering, engine- and instrument- design and manufacturing,
+                    computer science and radio- and telecommunications engineering.
+                    KSTU is the largest technical university in the Republic of Tatarstan and the Volga region
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="abilities" class="page odd" style="height: 100%">
+    <div class="content">
+        <h2>Abilities</h2>
+        <hr>
+
+        <div class="b-flex" style="overflow: auto;">
+            <table class="path-tech">
+                <caption><h4>My Path</h4></caption>
+                <tbody>
+                <tr>
+                    <td style="width: 100px;">PHP</td>
+                    <td class="line_c" colspan="10">
+                        <div style="position: relative;">
+                            <div class="line" style="width: 20%;"></div>
+                            <div class="line" style="left: 25%; width: 10%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MySQL</td>
+                    <td class="line_c" colspan="10">
+                        <div style="position: relative;">
+                            <div class="line" style="left: 5%; width: 30%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td class="line_c" colspan="10">
+                        <div style="position: relative;">
+                            <div class="line" style="left: 20%; width: 75%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>NodeJS</td>
+                    <td class="line_c" colspan="10">
+                        <div style="position: relative;">
+                            <div class="line" style="left: 35%; width: 15%;"></div>
+                            <div class="line" style="left: 55%; width: 8%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>PostgreSQL</td>
+                    <td class="line_c" colspan="10">
+                        <div style="position: relative;">
+                            <div class="line" style="left: 35%; width: 60%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Golang</td>
+                    <td class="line_c" colspan="10">
+                        <div style="position: relative;">
+                            <div class="line" style="left: 65%; width: 30%;"></div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr class="yearsAxis">
+                    <td style="border: none;"></td>
+                    <td>2010</td>
+                    <td>2011</td>
+                    <td>2012</td>
+                    <td>2013</td>
+                    <td>2014</td>
+                    <td>2015</td>
+                    <td>2016</td>
+                    <td>2017</td>
+                    <td>2018</td>
+                    <td>2019</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <section class="path-tech__skils">
+            <h3 class="m-t-20">Skills</h3>
+            JavaScript
+            ES6
+            MongoDB
+            Golang
+            CSS3
+            Docker
+            Git
+            REST
+            Unit Testing
+            PostgreSQL
+            ООП
+            JSON
+            Web Application Development
+            Linux
+            ReactJS
+            Atlassian Jira
+            TypeScript
+            MobX
+            Node.js
+            SQL
+
+            <h3 class="m-t-20">Languages</h3>
+            English: Intermediate, Russian: Native
+        </section>
+
+    </div>
+</div>
+<div id="contact" class="page odd" style="min-height: 50%;">
+    <div class="content">
+        <h2>Contacts</h2>
+        <hr>
+
+        <div class="text-center">
+            You may write me using through one of the social networks:
+            <div style="font-size: 23px;" class="m-t-10 m-b-10">
+                <a href="https://github.com/zoh" target="_blank" title="github" class="mdi mdi-github-circle"></a>
+                <a href="mailto:)" title="email" target="_blank" class="mdi mdi-email"></a>
+                <a href="https://tlgg.ru/@zohme" target="_blank" title="telegram" class="mdi mdi-telegram"></a>
+                <a href="https://www.linkedin.com/in/ilya-z-4376a670/" target="_blank" title="linkedin"
+                   class="mdi mdi-linkedin"></a>
+            </div>
+            good luck!
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="main.f11e0a226064baa5dffb.js"></script></body>
 </html>
