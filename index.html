@@ -10,16 +10,16 @@
 
     <meta name="author" content="Ilya Zaharov"/>
     <meta name="description"
-          content="I'm Ilya and I cool engineer developer; have a good knowledge of front-end and backend in particular: Golang, Node.js"/>
+          content="I'm Ilya and I cool engineer developer; have a good knowledge of front-end and backend in particular: Golang, JavaScript"/>
     <meta name="keywords"
           content="Resume, Full Stack, Web developer, Golang, Node.js, Vue.js, React, Algorithms, PostgreSQL"/>
-    <meta name="robots" content="index, follow"/>
+    <meta name="robots" content="index, nofollow"/>
     <meta name="revisit-after" content="30 days"/>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Ilya Zaharov</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.8.95/css/materialdesignicons.min.css">
 <link rel="shortcut icon" href="favicon.ico"><link href="main.css" rel="stylesheet"></head>
 <body>
@@ -30,7 +30,7 @@
 
 <div class="first-page" style="z-index: -2; position: relative;">
     <div class="container">
-        <h1>Ilya Zaharov</h1>
+        <h1 class="printer--name blinker"></h1>
         <p class="lead">resume page</p>
     </div>
 </div>
@@ -43,7 +43,7 @@
             <li class="active"><a href="#profile">Profile</a></li>
             <li><a href="#experiences">Experiences</a></li>
             <li><a href="#abilities">Abilities</a></li>
-            <!--            <li><a href="#projects">Projects</a></li>-->
+            <li><a href="#recommendations">Recommend</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
@@ -54,17 +54,17 @@
         <h2>Profile</h2>
         <div class="b-flex b-flex__border">
             <div class="b-flex__el__dark p-a-10 text-center">
-                <img class="face"
-                     src="./assets/images/photo_2019-04-08_23-06-12.jpg"
-                     alt=""/>
+                <img
+                        class="face"
+                        src="./assets/images/photo_2019-04-08_23-06-12.jpg"
+                        alt=""/>
                 <br>
                 <p>Name: <b>Ilya Zaharov</b></p>
-                <p>Age: <b>30</b></p>
                 <p><b>Russia, Kazan.</b> Milky way</p>
 
                 <aside class="sn-links m-t-15">
                     <a href="https://github.com/zoh" target="_blank" title="github" class="mdi mdi-github-circle"></a>
-                    <a href="mailto:)" title="email" target="_blank" class="mdi mdi-email"></a>
+                    <a href="mailto:ilya.zakharov.30@gmail.com" title="email" target="_blank" class="mdi mdi-email"></a>
                     <a href="https://tlgg.ru/@zohme" target="_blank" title="telegram" class="mdi mdi-telegram"></a>
                     <a href="https://www.linkedin.com/in/ilya-z-4376a670/" target="_blank" title="linkedin"
                        class="mdi mdi-linkedin"></a>
@@ -81,7 +81,7 @@
                     Interested in both professional and personal growth.
                 </p>
                 <ul>
-                    <li>excellent :) lead and single developer</li>
+                    <li>excellent lead and single developer :)</li>
                     <li>flexible approach to solving complex problems</li>
                     <li>continuous self-education</li>
                     <li>fast learning on new stacks and techs.</li>
@@ -89,13 +89,18 @@
                 </ul>
 
                 <aside class="">
-                    <p>- <a href="assets/images/Zakarov.cv.2019.pdf" target="_blank">the resume in pdf (ru)</a></p>
+                    <p>- <a href="assets/images/Zakarov.cv.2019.pdf" target="_blank">the resume in pdf (ru) and old</a>
+                    </p>
                     <p>-
                         <a rel="nofollow"
                            target="_blank"
                            href="https://kazan.hh.ru/applicant/resumes/view?resume=d571448fff073547370039ed1f48515749684a">
                             resume on hh.ru</a></p>
                 </aside>
+
+                <p>
+                    Looking for: NodeJS, <code>Golang</code>, <code>JavaScript</code>..
+                </p>
             </div>
         </div>
     </div>
@@ -104,12 +109,29 @@
     <div class="content">
         <h2>Experiences</h2>
         <hr>
-        <h3>Careers</h3>
 
         <div class="b-flex">
             <div class="b-flex__el b-flex__el_weak p-a-10 p-r-20 text-right">
-                <b>Self-Employer</b> <br>
-                <small>January 2016 - until now</small>
+                <b> <a rel="nofollow" href="https://tsep.pro">NPO Farvater</a> </b> <br>
+                <small>2019 - until now</small>
+            </div>
+            <div class="b-flex__el p-a-10 p-l-20">
+                <h4 class="m-t-0">Full Stack Web Developer</h4>
+
+                <p class="p-t-10"><u>ACS PS <i>"TSEP"</i></u></p>
+                <p class="paragraph">
+                    Automated control system for power plants and substations through the
+                    IEC 61850 communication protocol.<br>
+                    Monitoring and control system through AWP (Automated workplace). <br>
+                    Stack: <code>Golang</code>, <code>VueJS</code>, TimescaleDB, <code>Docker</code>, CI/CD via gitlab.
+                </p>
+            </div>
+        </div>
+
+        <div class="b-flex m-t-20">
+            <div class="b-flex__el b-flex__el_weak p-a-10 p-r-20 text-right">
+                <b>ABIES Escos, outstaffing</b> <br>
+                <small>January 2016 - 2019</small>
             </div>
             <div class="b-flex__el p-a-10 p-l-20">
                 <h4 class="m-t-0">Full Stack Web Developer</h4>
@@ -122,7 +144,7 @@
                     <u>ABIES Escos. Smart Lightning System, IoT</u> <br>
                 </p>
                 <p class="paragraph">
-                    Developed a UI using: ReactJS, webpack, Reflux, MobX;
+                    Developed a UI using: ReactJS, webpack, Reflux, MobX (MST+TypeScript❤);
                     And the server side on: <code>Golang</code>, PostgreSQL
                 </p>
                 <p class="p-t-10">
@@ -131,14 +153,6 @@
                 <p class="paragraph">
                     Full-cycle business process management system for dental clinics. <br>
                     ReactJS + Reflux, Webpack, <code>Golang</code>, Postgresql.
-                </p>
-
-                <p><u>ACS PS <i>"ZARYA"</i></u></p>
-                <p class="p-t-10 paragraph">
-                    Automated control system for power plants and substations through the
-                    IEC 61850 communication protocol.<br>
-                    Monitoring and control system through AWP (Automated workplace).
-                    Stack: <code>Golang</code>, <code>VueJS</code>, TimescaleDB
                 </p>
             </div>
         </div>
@@ -263,50 +277,41 @@
                 <caption><h4>My Path</h4></caption>
                 <tbody>
                 <tr>
-                    <td style="width: 100px;">PHP</td>
-                    <td class="line_c" colspan="10">
+                    <td>PHP</td>
+                    <td class="line_c" colspan="11">
                         <div style="position: relative;">
-                            <div class="line" style="width: 20%;"></div>
-                            <div class="line" style="left: 25%; width: 10%;"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>MySQL</td>
-                    <td class="line_c" colspan="10">
-                        <div style="position: relative;">
-                            <div class="line" style="left: 5%; width: 30%;"></div>
+                            <div class="line" style="left: 0; width: 20%;"></div>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td>JavaScript</td>
-                    <td class="line_c" colspan="10">
+                    <td class="line_c" colspan="11">
                         <div style="position: relative;">
-                            <div class="line" style="left: 20%; width: 75%;"></div>
+                            <div class="line" style="left: 10%; width: 85%;"></div>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td>NodeJS</td>
-                    <td class="line_c" colspan="10">
+                    <td class="line_c" colspan="11">
                         <div style="position: relative;">
-                            <div class="line" style="left: 35%; width: 15%;"></div>
-                            <div class="line" style="left: 55%; width: 8%;"></div>
+                            <div class="line" style="left: 15%; width: 15%;"></div>
+                            <div class="line" style="left: 35%; width: 8%;"></div>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td>PostgreSQL</td>
-                    <td class="line_c" colspan="10">
+                    <td class="line_c" colspan="11">
                         <div style="position: relative;">
-                            <div class="line" style="left: 35%; width: 60%;"></div>
+                            <div class="line" style="left: 15%; width: 80%;"></div>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td>Golang</td>
-                    <td class="line_c" colspan="10">
+                    <td class="line_c" colspan="11">
                         <div style="position: relative;">
                             <div class="line" style="left: 65%; width: 30%;"></div>
                         </div>
@@ -316,8 +321,6 @@
                 <tbody>
                 <tr class="yearsAxis">
                     <td style="border: none;"></td>
-                    <td>2010</td>
-                    <td>2011</td>
                     <td>2012</td>
                     <td>2013</td>
                     <td>2014</td>
@@ -326,13 +329,14 @@
                     <td>2017</td>
                     <td>2018</td>
                     <td>2019</td>
+                    <td>2020</td>
                 </tr>
                 </tbody>
             </table>
 
         </div>
 
-        <section class="path-tech__skils">
+        <section style="margin-left: 100px;" class="path-tech__skils">
             <h3 class="m-t-20">Skills</h3>
             JavaScript
             ES6
@@ -344,7 +348,7 @@
             REST
             Unit Testing
             PostgreSQL
-            ООП
+            OOP
             JSON
             Web Application Development
             Linux
@@ -356,29 +360,51 @@
             SQL
 
             <h3 class="m-t-20">Languages</h3>
-            English: Intermediate, Russian: Native
+            English: Intermediate+, Russian: Native
         </section>
 
     </div>
 </div>
+
+
+<div id="recommendations" class="page odd" style="height: 100%">
+    <div class="content">
+        <h2>recommendations</h2>
+        <hr>
+
+        <section class="recommendation--list">
+            <a href="assets/images/Zakharov-elephant.jpg"
+               target="_top"
+               class="recommendation--list__item"
+               data-title="Elephant Soft, Ltd"
+               style="background-image: url('assets/images/Zakharov-elephant.jpg')"
+            ></a>
+        </section>
+    </div>
+</div>
+
 <div id="contact" class="page odd" style="min-height: 50%;">
     <div class="content">
-        <h2>Contacts</h2>
+        <h2>contacts</h2>
         <hr>
 
         <div class="text-center">
             You may write me using through one of the social networks:
             <div style="font-size: 23px;" class="m-t-10 m-b-10">
                 <a href="https://github.com/zoh" target="_blank" title="github" class="mdi mdi-github-circle"></a>
-                <a href="mailto:)" title="email" target="_blank" class="mdi mdi-email"></a>
+                <a href="mailto: click me :)" title="email" target="_blank" class="mdi mdi-email"></a>
                 <a href="https://tlgg.ru/@zohme" target="_blank" title="telegram" class="mdi mdi-telegram"></a>
                 <a href="https://www.linkedin.com/in/ilya-z-4376a670/" target="_blank" title="linkedin"
                    class="mdi mdi-linkedin"></a>
             </div>
-            good luck!
+            With best regards!
         </div>
     </div>
 </div>
 
-<script type="text/javascript" src="vendor.d76d011facfb1a03b1f0.js"></script><script type="text/javascript" src="bundle.42ab48599ade8d43ea2f.js"></script><script type="text/javascript" src="main.595b959019bf75cb0d12.js"></script></body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js"></script>
+
+<script type="text/javascript" src="vendor.896a408ef7e4f2e9037d.js"></script><script type="text/javascript" src="bundle.f8875f5ae7c7763a3f05.js"></script><script type="text/javascript" src="main.edb9221e2b9fc798047d.js"></script></body>
 </html>
